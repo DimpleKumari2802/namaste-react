@@ -32,6 +32,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
     React Element (Object) => becomes HTML that the browser understands
  */
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const parent = React.createElement("div", { id: "parent" }, [
         React.createElement("div", { id: "childOne", }, [ 
@@ -46,7 +48,7 @@ const parent = React.createElement("div", { id: "parent" }, [
 // root.render(parent)
 
 const listItems = React.createElement("ul",{className: "parenList"},[
-    React.createElement("li",{},"List One"),
+    React.createElement("li",{},"List One React"),
     React.createElement("li",{},"List Two"),
     React.createElement("li",{},"List Three"),
 ])
